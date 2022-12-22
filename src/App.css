@@ -1,0 +1,126 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.header{
+  width: 100%;
+  background-color: indigo;
+  padding: 10px;
+}
+
+.container{
+  padding:0 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.searchArea{
+  background-color: white;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-radius: 10px;
+}
+.searchArea i{
+  color: indigo;
+  font-size: 15px;
+}
+.searchArea input{
+  width: 80%;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  margin-left: 5px;
+}
+.searchArea button{
+  padding: 12px 30px;
+  border: none;
+  background-color: white;
+  color: indigo;
+  font-size: 15px;
+  letter-spacing: 2px;
+  border: 1px solid indigo;
+  border-radius: 10px;
+}
+
+.wishBtn{
+  padding: 20px;
+  background-color: white;
+  border: none;
+  border-radius: 10px;
+  color: indigo;
+  font-size: 15px;
+  letter-spacing: 2px;
+}
+
+.movies{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 10px;
+  margin: 40px;
+}
+.movie{
+  border: 1px solid black;
+  height: 450px;
+  align-items: center;
+  background-color: indigo;
+  color: white;
+  border-radius: 10px;
+}
+.movie img{
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.movieInfo{
+  padding: 20px;
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+}
+.movieDesc{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 20px;
+}
+
+.wishIcon{
+  background-color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  font-size: 20px;
+  color: indigo;
+}
+
+.wishs{
+  position: absolute;
+  background-color: indigo;
+  width: 400px;
+  height: 85vh;
+  top: 11%;
+  right: 0;
+  z-index: 100;
+  overflow-y: scroll;
+}
+.wish{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 5px;
+  margin: 5px;
+  border: 1px solid white;
+  color: white;
+  font-size: 18px;
+}
+.wishs img{
+  width: 150px;
+}
