@@ -89,16 +89,21 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .wishIcon{
   background-color: white;
+  width: 50px;
+  height: 50px;
   padding: 10px 20px;
   border: none;
   border-radius: 10px;
   font-size: 20px;
   color: indigo;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .wishs{
@@ -122,5 +127,40 @@
   font-size: 18px;
 }
 .wishs img{
-  width: 150px;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.loader {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 120px;
+  height: 120px;
+  margin-top: 50px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+}
+.errorWish{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  margin-top: 50px;
+}
+.movieTitle{
+  font-size: 15px;
+}
+.movieYear{
+  font-size: 15px;
+}
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }
